@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="cal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="date">
+      <div  id="days">
+        <label >DAY</label>
+        <input type="number" class="day" placeholder="DD">
+        <p class="dayerror" id="error"></p>
+
+      </div>
+
+      <div  id="days">
+        <label >MONTH</label> 
+        <input type="number" class="month" placeholder="MM">
+        <p class="montherror" id="error"></p>
+      </div>
+
+      <div  id="days">
+        <label >YEAR</label>
+        <input type="number" class="year" placeholder="YYYY">
+        <p class="yearerror" id="error"></p>
+
+      </div>
+     
+    </div>
+    <div class="arrow"></div>
+    <hr>
+
+   <div class="result">
+     <span><p id="year">--</p> years</span>
+     <span><p id="month">--</p> months</span>
+     <span><p id="day">--</p> days</span>
+   </div>
+  </div>
+
+  <script src="cal.js"></script>
+</body>
+
+</html>

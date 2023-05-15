@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 570px;
+    height: 450px;
+    flex-direction: column;
+    background-color:white ;
+    border-radius: 30px 30px 150px 30px;
+}
+.date{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px 0  15px 30px;
+}
+#days{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#error{
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-weight: 400; 
+    padding-top:5px ; 
+}
+
+label{
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    font-weight: 700; 
+    padding-bottom:3px ; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input{
+    width: 110px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    padding: 0 15px;
+}
+input:hover{
+    border: 1px solid hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+.arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    background-image: url(./assets/images/icon-arrow.svg);
+    background-size: 30px;
+    background-color: hsl(259, 100%, 65%);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transform: translate(470px ,-5px);
+}
+hr{
+    width: 450px;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin: 35px 0  30px 30px;
+}
+.arrow:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.result span {
+    display: block;
+    font-size: 63px;
+    font-weight: 800;
+  }
+  
+  .result span p {
+    display: inline;
+    margin: 0;
+    color: hsl(259, 100%, 65%);
+  }
+.result{
+    width: 450px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 30px 0  15px 30px;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 24px;  
+    }
+    .main {
+        overflow-x: hidden;
+        width: 85%; 
+        height: 500px;
+              
+    }
+    .date {
+        width: 95%;
+        margin: 30px 0  10px 0; 
+        display: flex;
+        justify-content: space-around;
+        
+    
+    }
+    label{
+        margin-left: 15px;
+    }
+    #days {
+        margin-bottom: 15px;
+    }
+    input {
+        width: 80px;
+     margin-left: 15px;
+     padding: 0 7px;
+    }
+    .arrow {
+
+        height: 40px;
+    width: 40px;
+        transform: translate(134px, -4px);
+    }
+    hr {
+        width: 80%;
+         margin: 25px 0 30px 29px; 
+    }
+    .result {
+        
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    .result span {
+        font-size: 44px;
+      }
+      
+      
+}
+
